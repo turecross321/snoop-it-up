@@ -4,15 +4,9 @@
 #include <psp2/io/fcntl.h>
 #include <psp2/net/http.h>
 #include <psp2/sysmodule.h>
-#include <psp2kern/kernel/rtc.h>
 
 #define SNOOP_MODULE TAI_MAIN_MODULE
 #define SCE_HTTP_NID 0xE8F15CDE
-
-#define NEW_SERVER_NAME "activity.ture.fish"
-#define ORIGINAL_SERVER_NAME "activity01.ww.np.community.playstation.net"
-#define NEW_BASE_URL "https://activity.ture.fish"
-#define ORIGINAL_BASE_URL "https://activity0.ww.np.community.playstation.net"
 
 static tai_hook_ref_t load_hook;
 static tai_hook_ref_t load2_hook;
